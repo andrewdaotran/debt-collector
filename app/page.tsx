@@ -8,8 +8,6 @@ export default async function Home() {
 	const res = await fetch(`${BASE_URL}/api/users`)
 	const { users } = await res.json()
 
-	console.log(users)
-
 	return (
 		<div>
 			<ul className='border border-red-500 grid justify-items-center items-center gap-10'>
