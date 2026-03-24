@@ -1,7 +1,13 @@
 import React from 'react'
+import { UserType } from '@/typings'
 
-const UserMainCard = () => {
-	return <div>UserMainCard</div>
+const UserMainCard = ({ user, amountOwed }: UserType) => {
+	return (
+		<li>
+			<p>{user}</p>
+			<p>{amountOwed}</p>
+		</li>
+	)
 }
 
 export default UserMainCard
