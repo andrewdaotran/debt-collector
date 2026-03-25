@@ -5,8 +5,31 @@ import { UserType } from '@/typings'
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
 
 export default async function Home() {
+	// const res = await fetch(`http://localhost:3000/api/users`)
 	const res = await fetch(`${BASE_URL}/api/users`)
 	const { users } = await res.json()
+	// const users = [
+	// 	{
+	// 		user: 'Ashley',
+	// 		amountOwed: '$4526.19',
+	// 	},
+	// 	{
+	// 		user: 'Mom',
+	// 		amountOwed: '$1723.38',
+	// 	},
+	// 	{
+	// 		user: 'Nancy',
+	// 		amountOwed: '$1109.72',
+	// 	},
+	// 	{
+	// 		user: 'Andrew',
+	// 		amountOwed: '$100000.72',
+	// 	},
+	// 	{
+	// 		user: 'Tom',
+	// 		amountOwed: '$100000.72',
+	// 	},
+	// ]
 
 	return (
 		<div>
@@ -17,6 +40,12 @@ export default async function Home() {
 						<UserMainCard key={user.user} {...user} />
 					))}
 			</ul>
+			<h1>HELLLOOOO</h1>
+			<h1>HELLLOOOO</h1>
+			<h1>HELLLOOOO</h1>
+			<h1>HELLLOOOO</h1>
+			<h1>HELLLOOOO</h1>
+			<h1>HELLLOOOO</h1>
 		</div>
 	)
 }
