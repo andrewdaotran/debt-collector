@@ -39,3 +39,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# PedroTech MongoDB w/ NextJS 16
+# https://www.youtube.com/watch?v=vCIsrOGNhas
+# https://youtu.be/vCIsrOGNhas?si=WfzndvEQs6I6L6dZ&t=7173 How to make a schema

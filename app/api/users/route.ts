@@ -1,10 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
-import connectDB from '@/lib/mongoose'
 import User from '@/models/User'
 
 export async function POST(req: NextRequest) {
 	try {
-		await connectDB()
 		const { user, amountOwed } = await req.json()
 		const newUser = new User({ user, amountOwed })
 		await newUser.save()
